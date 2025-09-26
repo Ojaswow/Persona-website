@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Ojas • Crafted Works</title>
+
+<!-- Google fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrap">
+    <section class="hero card" id="hero">
+      <div class="avatar">
+        <!-- Replace this image with your photo -->
+        <img id="profileImg" src="avatar.png" alt="Ojas">
+      </div>
+      <div class="intro">
+        <h1 id="heroName">Ojas — Crafted Works</h1>
+        <div class="tagline">Student • Visual notes & micro-projects • Clean design with a golden aura</div>
+
+        <div class="cta">
+          <a class="btn primary" href="#projects">See Projects</a>
+          <a class="btn" id="downloadBtn" href="https://ojaswow.github.io/Gaming-Website/" onclick="downloadPDF();return false;">Download Notes (PDF)</a>
+     <a class="btn ghost" href="https://www.instagram.com/ojas_tiwari_99" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="cols">
+      <div>
+        <section class="card fade-up" id="projects">
+          <h3 style="margin:0 0 8px 0">Showcase</h3>
+          <div class="projects">
+            <div class="proj">
+              <img src="https://placehold.co/600x400?text=Mini+App" alt="">
+              <h4>Study Timer App</h4>
+              <p>Small JS timer I built to focus — shows my coding + UX taste.</p>
+            </div>
+
+            <div class="proj">
+              <img src="https://placehold.co/600x400?text=Notes+Design" alt="">
+              <a href="https://ojaswow.github.io/Gaming-Website/">Project Notes PDF</a>
+              <p>One-page PDF, ready for print — shared with classmates.</p>
+            </div>
+
+            <div class="proj">
+              <img src="https://placehold.co/600x400?text=Gallery" alt="">
+              <h4>Photo & Sketch Gallery</h4>
+              <p>Small curated gallery — shows creativity and attention to detail.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card fade-up" style="margin-top:12px" id="about">
+          <h3 style="margin-top:0">About — Short & Honest</h3>
+          <p style="color:var(--muted);margin:6px 0 0 0">I’m a student who builds tiny, useful things — study tools, notes, and visual experiments. This site is my hand-made space to share work that actually helps people.</p>
+        </section>
+      </div>
+
+      <aside class="side">
+        <div class="card">
+          <div class="mini">
+            <div style="flex:1">
+              <div style="font-size:13px;color:var(--muted)">Contact</div>
+              <div style="font-weight:700;margin-top:6px">tiwariojas459@gmail.com</div>
+            </div>
+          </div>
+
+          <div style="margin-top:8px">
+            <div class="pill">Available for small collabs</div>
+          </div>
+
+          <div style="margin-top:14px">
+            <div style="font-size:13px;color:var(--muted)">Quick links</div>
+            <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+              <a class="btn" href="#projects">Projects</a>
+              <a class="btn" href="#about">About</a>
+              <a class="btn" href="https://instagram.com/ojas_tiwari_99" target="_blank">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div style="color:var(--muted)">Made with care • Update this page weekly with one new snippet.</div>
+    </footer>
+  </div>
+
+<script>
+  // small reveal animation
+  document.addEventListener('DOMContentLoaded', ()=> {
+    document.querySelectorAll('.fade-up').forEach((el,i)=>{
+      setTimeout(()=> el.classList.add('show'), 120 + i*120);
+    });
+  });
+
+  // fake download (replace with real PDF link)I
+  function downloadPDF(){
+    // Replace the URL below with your uploaded PDF file URL (GitHub/Drive/Dropbox direct link)
+    const pdfUrl = 'ojaswow.github.io';
+    // if user didn't replace link, show friendly message
+    if(pdfUrl.includes('example.com')){
+      alert('Upload your PDF online (GitHub/Drive) and replace the link in the HTML to enable download.');
+      return;
+    }
+    window.open(pdfUrl, '_blank');
+  }
+</script>
+</body>
+</html>
