@@ -1,11 +1,18 @@
 {
-  "background_color": "#ffffff",
-  "dir": "ltr",
+  "name": "Persona Website",
+  "short_name": "Persona",
+  "start_url": "/Persona-website/",
+  "scope": "/Persona-website/",
   "display": "standalone",
-  "name": "ojaswow.github",
-  "orientation": "any",
-  "scope": "/",
-  "short_name": "ojaswow.github",
-  "start_url": "/",
-  "theme_color": "#ffffff"
-}
+  "background_color": "#ffffff",
+  "theme_color": "#4a90e2",
+  "orientation": "portrait-primary",
+  "description": "A personal portfolio website by Ojas.",
+  "icons": [
+    {
+      "src": "android-launcher-144-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ]
+} 
